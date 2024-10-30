@@ -292,7 +292,7 @@ func (kc *KubeConnector) FindDeployments() error {
 				resourceList.Cpu().AsApproximateFloat64(),
 				resourceList.Memory().AsApproximateFloat64() / config.MB,
 			}),
-			EdgeShare: 1, // TODO parse it from deployment's labels
+			EdgeShare: 0.5, // TODO parse it from deployment's labels
 		}
 		// FIXME manual edge share:
 		// if strings.Contains(strings.ToLower(deploymentName), "d") {
