@@ -2,8 +2,8 @@ name: ecmus
 namespace: ecmus
 resource_count: 2
 batch_size: 10
-maximum_migrations: 3
-maximum_cloud_offload: 5
+maximum_migrations: 0
+maximum_cloud_offload: 0
 connector: kubernetes
 connector_config: ./config
 flush_period_duration: 1000
